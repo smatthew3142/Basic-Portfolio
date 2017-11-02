@@ -11,53 +11,65 @@
 </head>
 <body>
 
-<div class="top-banner">
-	<h1>Sarika Matthew</h1>
-	<ul class="nav">
-		<li><a href= "index.html">About</a></li>
-		<li><a href= "portfolio.html">Portfolio</a></li>
-		<li><a href= "contact.html">Contact</a></li>
-	</ul>
-</div>
+	<div class="wrap">
+		<header>
+			<div class="top-banner">
+				<h1 class="name">Sarika Matthew</h1>
+				<div class="navigation">
+					<ul>
+						<li><a href= "index.html">About</a></li>
+						<li><a href= "portfolio.html">Portfolio</a></li>
+						<li><a href= "contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-<div class="content-section">
-	<h1>Contact</h1>
+		<div class="main-content">
+			<div class="inside">
+				<h1 class="title">Contact</h1>
+				<hr>
+				<form>
+					
+					Name:
+					<br>
+					<input type= "text" name= "name" placeholder="Your Name">
+					<br>
+					<br>
+					Email Address:
+					<br>
+					<input type="text" name="email" placeholder="abc123@gmail.com">
+					<br>
+					<br>
+					Message:
+					<br>
+					<textarea name="message" form="form"></textarea>
+					<button type="button" onclick="alert('Your message has been sent!')">Send</button>
+				</form>
+			</div>
 
-	<form>
-    <label for= "name">Name:</label>
-    <input type= "text" id= "name">
-    
-    <label for= "email">Email:</label>
-    <input type="email_address" id="email">
-    
-    <label for="mesage">Message:</label>
-    <textarea id="message"></textarea>
-    
-    <button type="button" onclick="alert('Your message has been sent!')">Send</button>
+			<div class="sidebar">
+				<h2 class="title">Connect with Me</h2>
+				<hr>
 
-  </form>
-	
-</div>
+				<a href="https://github.com/smatthew3142">
+					<img src= "./assets/images/icon_github.png" width= "50"></a>
 
-<div class="sidebar">
-	<h2>Connect with Me</h2>
+				<a href="https://www.linkedin.com/in/sarikamatthew/">
+					<img src= "./assets/images/icon_linkedin.png" width= "50"></a>
 
-		<ul>
+				<a href="https://twitter.com/mynabirdy">
+					<img src= "./assets/images/icon_twitter.png" width= "50"></a>
+				</div>
 
-		<li><a href="https://github.com/smatthew3142"><img src= "./assets/images/icon_github.png" width= "50"></a></li>
+			</div>
 
-		<li><a href="https://www.linkedin.com/in/sarikamatthew/"><img src= "./assets/images/icon_linkedin.png" width= "50"></a></li>
+		</div>
 
-		<li><a href="https://twitter.com/mynabirdy"><img src= "./assets/images/icon_twitter.png" width= "50"></a></li>
-	</ul>
-</div>
-
-<div class="copyright-footer">
+	<footer class="copy">
 	 
-	<p>
 		&copy; Copyright 2017 Sarika Matthew
-	</p>
-</div>
+	</footer>
 
 
 </body>
