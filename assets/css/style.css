@@ -12,8 +12,8 @@ html, body {
 header {
   width: 100%;
   overflow: auto;
-  background: #fff;
-  border-bottom: #cccccc solid 2px;
+  background: #FFFFFF;
+  border-bottom: #CCCCCC solid 2px;
   margin-bottom: 40px;
 }
 
@@ -48,9 +48,9 @@ li {
 }
 
 hr {
-  border: #dddddd;
-  background-color: #dddddd;
-  height: 3px;
+  border: #DDDDDD;
+  background-color: #DDDDDD;
+  height: 4px;
   margin-top: 25px;
 }
 
@@ -59,33 +59,24 @@ p {
   margin-top: 20px;
 }
 
-footer {
-  clear: both;
-  width: 100%;
-  background: #666666;
-  border-top: #4aaaa5 solid 5px;
-  color: #dddddd;
-  text-align: center;
-  font-size: 12px;
-  padding-top: 40px;
-}
 
-input[type=text], textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     font-size: 12px;
-    border: #aaaaaa solid 1px;
+    border: #CCCCCC solid 1px;
 }
 
-input[type=text] {
+input {
     margin-bottom: 10px;
     font-size: 12px;
+
 }
 
 textarea {
   height: 125px;
-}
 
+}
 
 
 form {
@@ -93,36 +84,55 @@ form {
   
 }
 
-input[type=text]:focus, textarea:focus, input[type=button]:focus {
-    outline: none;
-    border: #4aaaa5;
-    box-shadow: inset 0 0 5px #4aaaa5, 0 0 5px #4aaaa5;
+button {
+  background-color: #4AAAA5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
+
 
 a:link, a:visited {
   color: #777777;
   text-decoration: none;
 }
 
-a:hover, a:active {
-  color: #4aaaa5;
-}
-
-li:nth-child(2) {
-  border-left: #cccccc solid 1px;
-  border-right: #cccccc solid 1px;
+a:hover {
+  color: #4AAAA5;
 }
 
 li:nth-child(3) {
-  padding-right: 0;
+  border-left: #CCCCCC solid 1px;
+  border-right: #CCCCCC solid 1px;
+}
+
+
+footer {
+  clear: both;
+  width: 100%;
+  background: #666666;
+  border-top: #4AAAA5 solid 5px;
+  color: #DDDDDD;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 40px;
 }
 
 .name {
-  background: #4aaaa5;
-  color: #fff;
+  background: #4AAAA5;
   padding: 30px;
   margin: 0px;
   float: left;
+}
+
+.name a{
+  color: #FFFFFF;
 }
 
 .wrap {
@@ -136,68 +146,35 @@ li:nth-child(3) {
   padding: 0;
 }
 
+.navigation {
+  margin-top: 35px;
+  float: right;
+}
+
 .main-content{
   width: 960px;
   margin: 0 auto;
   padding: 0;
 }
 
-.navigation {
-  margin-top: 35px;
-  float: right;
-}
-
 .title {
-  color: #4aaaa5;
+  color: #4AAAA5;
   margin-top: 0;
 }
 
 .inside, .sidebar {
-  background: #fff;
-  border: #dddddd solid 1px;
+  background: #FFFFFF;
+  border: #DDDDDD solid 1px;
   margin: 0;
   padding: 30px;
 }
 
 .inside {
   width: 650px;
-  clear: both;
+  clear:both;
   float: left;
   margin-bottom: 40px;
 }
-
-.portfolio {
-  position: relative;
-  float: left;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.right-col {
-  float: right;
-}
-
-.note {
-  width: 250px;
-  text-align: center;
-  background: #4aaaa5;
-  opacity: 0.75;
-  color: #fff;
-  padding: 20px;
-  margin: 0px;
-  position: absolute;
-  bottom: 10px;
-}
-
-.note:hover {
-
-  opacity: 1.0;
-}
-
-.note h2 {
-  font-weight: normal;
-}
-
 
 .inside  img {
   height: 250px;
@@ -216,17 +193,51 @@ li:nth-child(3) {
   height: 60px;
   width: 60px;
   margin-top: 15px;
+
 }
 
-.sidebar a:nth-of-type(2) {
+.sidebar a {
   margin-left: 9px;
   margin-right: 9px;
+
 }
 
 
 .sidebar hr {
   height: 2px;
   margin-top: 20px;
+}
+
+.portfolio {
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.right-col {
+  float: right;
+}
+
+.note {
+  width: 250px;
+  text-align: center;
+  background: #4AAAA5;
+  opacity: 0.75;
+  color: #FFFFFF;
+  padding: 20px;
+  margin: 0px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.note:hover {
+
+  opacity: 1.0;
+}
+
+.note h2 {
+  font-weight: normal;
 }
 
 .copy, .wrap:after {
